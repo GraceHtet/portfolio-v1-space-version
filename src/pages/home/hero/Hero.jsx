@@ -6,7 +6,7 @@ import './Hero.css'
 const Hero = () => {
   return (
     <section id='hero' className="hero">
-      <Navigation />
+      <Navigation section="hero"/>
         <p className="greet-text">
           Hey there,
           <br/>

@@ -14,7 +14,7 @@ const NavItem = ({ name, route, path}) => {
   }
   return (
     <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-      <a href={route} >
+      <a href={route}>
         {isHovering && <span className="hover-navitem">{name}</span>}
         <span className='navitem' style={{backgroundImage: `url(${path})`}}></span>
       </a>
