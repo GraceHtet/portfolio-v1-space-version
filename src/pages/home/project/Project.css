@@ -1,0 +1,13 @@
+#project {
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.icon-group .item img {
+  width: 25px;
+  height: 25px;
+}

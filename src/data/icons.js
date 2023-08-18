@@ -1,10 +1,26 @@
-import heroIcon from '../assets/img/icon/home.svg';
-import aboutIcon from '../assets/img/icon/user.svg';
-import projectIcon from '../assets/img/icon/projects.svg';
-import cvIcon from '../assets/img/icon/cv.svg';
-import contactIcon from '../assets/img/icon/contact.svg';
+import heroIcon from '../assets/img/icon/nav/home.svg';
+import aboutIcon from '../assets/img/icon/nav/user.svg';
+import projectIcon from '../assets/img/icon/nav/projects.svg';
+import cvIcon from '../assets/img/icon/nav/cv.svg';
+import contactIcon from '../assets/img/icon/nav/contact.svg';
+import html from '../assets/img/icon/tech/Html.png';
+import css from '../assets/img/icon/tech/CSS.png';
+import js from '../assets/img/icon/tech/JavaScript.png';
+import react from '../assets/img/icon/tech/React.png';
+import postgre from '../assets/img/icon/tech/PostgreSQL.png';
+import ruby from '../assets/img/icon/tech/Ruby.png';
+import rails from '../assets/img/icon/tech/Rails.png';
+import jest from '../assets/img/icon/tech/jest.png';
+import rspec from '../assets/img/icon/tech/rspec.png';
+import github from '../assets/img/icon/tech/GitHub.png';
+import figma from '../assets/img/icon/tech/Figma.png';
+import heroku from '../assets/img/icon/tech/Rails.png';
+import postman from '../assets/img/icon/tech/Postman.png';
+import render from '../assets/img/icon/tech/render.png';
+import netlify from '../assets/img/icon/tech/netlify.png';
+import webpack from '../assets/img/icon/tech/Webpack.png';
 
-const icons = [
+const navIcons = [
   {
     id: 1,
     name: 'home',
@@ -37,4 +53,87 @@ const icons = [
   },
 ];
 
-export default icons;
+const techIcons = [
+  {
+    id: 1,
+    name: 'HTML',
+    path: html,
+  },
+  {
+    id: 2,
+    name: 'CSS',
+    path: css,
+  },
+  {
+    id: 3,
+    name: 'JavaScript',
+    path: js,
+  },
+  {
+    id: 4,
+    name: 'React',
+    path: react,
+  },
+  {
+    id: 5,
+    name: 'PostgreSQL',
+    path: postgre,
+  },
+  {
+    id: 6,
+    name: 'Ruby',
+    path: ruby,
+  },
+  {
+    id: 7,
+    name: 'Rails',
+    path: rails,
+  },
+  {
+    id: 8,
+    name: 'Jest',
+    path: jest,
+  },
+  {
+    id: 9,
+    name: 'Rspec',
+    path: rspec,
+  },
+  {
+    id: 10,
+    name: 'GitHub',
+    path: github,
+  },
+  {
+    id: 11,
+    name: 'Figma',
+    path: figma,
+  },
+  {
+    id: 12,
+    name: 'Heroku',
+    path: heroku,
+  },
+  {
+    id: 13,
+    name: 'Netlify',
+    path: netlify,
+  },
+  {
+    id: 14,
+    name: 'Render',
+    path: render,
+  },
+  {
+    id: 15,
+    name: 'Webpack',
+    path: webpack,
+  },
+  {
+    id: 16,
+    name: 'Postman',
+    path: postman,
+  },
+];
+
+export { navIcons, techIcons };

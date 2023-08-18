@@ -20,20 +20,21 @@ section {
   position: absolute;
 }
 
-.nav span {
+.item,
+.hover-item {
   display: inline-block;
   width: 40px;
   height: 40px;
   padding: 5px;
   margin: 5px;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
+  line-height: 2;
   border: 2px solid var(--main-color);
   border-radius: 50%;
-  box-shadow: 0 0 8px var(--font-color);
+  box-shadow: 0 0 5px var(--font-color);
 }
 
-.hover-navitem {
+.hover-item {
   background: rgba(0, 0, 0, 0.5);
   color: var(--font-color);
   text-align: center;

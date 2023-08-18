@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
-import NavItem from './NavItem'
-import icons from '../data/icons'
-import ufo from '../assets/img/icon/ufo.svg'
+import Item from './Item'
+import { navIcons } from '../data/icons';
+import ufo from '../assets/img/icon/nav/ufo.svg'
 
 const Navigation = ({section}) => {
 
   return (
     <ul className="nav">
-      {(section !== 'hero') && (
+      {/* {(section !== 'hero') && (
       <li>
         <a href="#hero">
           <img src={ufo} alt="ufo" className="ufo_icon"/>
         </a>
-      </li>)}
-      {(section !== 'contact') && icons.map((icon)=>{
-        return <NavItem key={icon.id} name={icon.name} route={icon.route} path={icon.path}/>
+      </li>)} */}
+      {(section !== 'contact') && navIcons.map((icon)=>{
+        return <Item key={icon.id} name={icon.name} route={icon.route} path={icon.path}/>
       })}
     </ul>
   );
