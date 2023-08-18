@@ -1,0 +1,18 @@
+.contact {
+  overflow-y: auto;
+}
+.contact .icon-group {
+  flex-direction: column;
+}
+
+.contact .item,
+.contact .hover-item {
+  width: 130px;
+  height: 130px;
+  font-size: 1.2em;
+}
+
+.contact .item img {
+  width: 100px;
+  height: 100px;
+}

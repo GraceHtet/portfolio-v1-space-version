@@ -27,8 +27,8 @@ section {
   height: 40px;
   padding: 5px;
   margin: 5px;
-  text-align: center;
-  line-height: 2;
+  display: grid;
+  place-items: center;
   border: 2px solid var(--main-color);
   border-radius: 50%;
   box-shadow: 0 0 5px var(--font-color);
