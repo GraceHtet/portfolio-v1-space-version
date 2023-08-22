@@ -1,8 +1,12 @@
+import Detail from './Detail';
+import TechSkill from './TechSkill';
+
 const About = () => {
   return (
-    <div>
-        <h1>I am about page of thiri.</h1>
-    </div>
+    <>
+      <Detail />
+      <TechSkill />
+    </>
   )
 }
 

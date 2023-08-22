@@ -1,21 +1,22 @@
 import Navigation from "../../../components/Navigation"
-import moon from  "../../../assets/img/moon.svg"
+import moon from  "../../../assets/img/moon.png"
 import mars from "../../../assets/img/mars.svg"
-import './Hero.css'
+import style from './Hero.module.css'
+// import './Hero.css';
 
 const Hero = () => {
   return (
-    <section id='hero' className="hero">
-      <Navigation section="hero"/>
-        <p className="greet-text">
+    <section id='hero' className={`grid-center ${style.hero}`}>
+      <Navigation section="hero" className={`p-abs ${style.nav}`}/>
+        <p className={`f-color h-font ${style['greet-text']}`}>
           Hey there,
           <br/>
-          <span className="name">I&apos;m Grace.</span>
+          <span className={style.name}>I&apos;m Grace.</span>
           <br/>
-          I can transform your ideas into website.
+          Turn your dream website into a stunning reality.
         </p>
-      <img src={moon} className='hero-moon' alt='moon' />
-      <img src={mars} className='hero-mars' alt='mars' />
+      <img src={moon} className={`p-abs ${style['hero-moon']}`} alt='moon' />
+      <img src={mars} className={`p-abs ${style['hero-mars']}`} alt='mars' />
     </section>
   )
 }

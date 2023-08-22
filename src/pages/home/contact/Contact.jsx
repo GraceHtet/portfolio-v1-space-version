@@ -3,6 +3,7 @@ import Navigation from "../../../components/Navigation"
 import Item from "../../../components/Item"
 import { contactIcons } from "../../../data/icons"
 import profile from "../../../assets/img/portfolio_image.png";
+import moon from "../../../assets/img/moon.svg"
 import './Contact.css';
 
 const Contact = () => {
@@ -52,6 +53,7 @@ const Contact = () => {
           Start Collaboration
         </button>
       </form>
+      <img src={moon} className='hero-moon' alt='moon' />
     </section>
   )
 }

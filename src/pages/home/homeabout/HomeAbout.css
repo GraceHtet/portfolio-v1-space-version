@@ -1,0 +1,19 @@
+.home-about {
+  .intro {
+    width: 60%;
+    font-size: 24px;
+  }
+
+  .nav {
+    display: grid;
+    place-items: center;
+    right: 2%;
+    top: 2%;
+  }
+
+  .saturn {
+    position: absolute;
+    right: -10%;
+    bottom: -20%;
+  }
+}

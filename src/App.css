@@ -7,6 +7,10 @@
   --main-font: 'Georama', sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 section {
   width: 100%;
   height: 100vh;
@@ -14,15 +18,12 @@ section {
   overflow: hidden;
 }
 
-.nav {
-  list-style-type: none;
-  display: flex;
-  position: absolute;
+h1 {
+  font-size: 4rem;
 }
 
 .item,
 .hover-item {
-  display: inline-block;
   width: 40px;
   height: 40px;
   padding: 5px;
@@ -32,6 +33,13 @@ section {
   border: 2px solid var(--main-color);
   border-radius: 50%;
   box-shadow: 0 0 5px var(--font-color);
+}
+
+.ufo-item img {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  box-shadow: none;
 }
 
 .hover-item {

@@ -1,0 +1,31 @@
+:root {
+  --main-color: #efd89c;
+}
+
+.nav {
+  top: 0;
+  left: 0;
+}
+
+.greet-text {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.name {
+  font-size: 48px;
+}
+
+.hero-moon {
+  width: 80%;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-mars {
+  width: 50%;
+  top: -60%;
+  right: -20%;
+}

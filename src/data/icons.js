@@ -19,6 +19,8 @@ import postman from '../assets/img/icon/tech/Postman.png';
 import render from '../assets/img/icon/tech/render.png';
 import netlify from '../assets/img/icon/tech/netlify.png';
 import webpack from '../assets/img/icon/tech/Webpack.png';
+import linkedin from '../assets/img/icon/contact/LinkedIn.png';
+import twitter from '../assets/img/icon/contact/TwitterX.png';
 
 const navIcons = [
   {
@@ -136,4 +138,25 @@ const techIcons = [
   },
 ];
 
-export { navIcons, techIcons };
+const contactIcons = [
+  {
+    id: 1,
+    name: 'GitHub',
+    route: 'https://github.com/gracehtet',
+    path: github,
+  },
+  {
+    id: 2,
+    name: 'LinkedIn',
+    route: 'https://www.linkedin.com/in/thirihtethtetaung/',
+    path: linkedin,
+  },
+  {
+    id: 3,
+    name: 'Twitter',
+    route: 'https://twitter.com/Grace_Htet4',
+    path: twitter,
+  },
+];
+
+export { navIcons, techIcons, contactIcons };
