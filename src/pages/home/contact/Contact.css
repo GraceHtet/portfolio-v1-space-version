@@ -34,15 +34,15 @@
 
   .item,
   .hover-item {
-    width: 130px;
-    height: 130px;
+    width: 10vw;
+    height: 10vw;
     font-size: 1.2em;
     margin: 20px 0;
   }
 
   .item img {
-    width: 100px;
-    height: 100px;
+    width: 6vw;
+    height: 6vw;
   }
 
   .form-input,
@@ -51,7 +51,7 @@
     width: 50%;
     background: transparent;
     color: #e6e6e6;
-    border: 1px solid #e6e6e6;
+    border: 1.5px solid #e6e6e6;
     border-radius: 50px;
     padding: 20px 30px;
     font-family: 'Hack', 'serif';
@@ -59,15 +59,20 @@
 
   .submit-btn {
     cursor: pointer;
+    font-family: 'Hack Bold', 'serif';
 
     &:hover {
       background-color: #e6e6e6;
       color: #3c3c3c;
     }
+
+    &:active {
+      transform: translateY(4px);
+    }
   }
 
   .form-input:focus,
-  .submit-btn:focus {
+  .submit-btn:hover {
     outline: none;
     box-shadow: 0 0 8px #efd89c;
   }

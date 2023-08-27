@@ -51,6 +51,10 @@ h1 {
   box-shadow: 0 0 5px var(--font-color);
 }
 
+.item img {
+  object-fit: contain;
+}
+
 .ufo-icon {
   display: inline-block;
   width: 60px;
@@ -100,7 +104,6 @@ h1 {
   margin: 10px 15px 5px 0;
   border: 2px solid var(--main-color);
   border-radius: 50px;
-  transition: all 0.3s ease;
 
   &:hover {
     background-color: var(--main-color);
@@ -108,7 +111,7 @@ h1 {
   }
 
   &:active {
-    transform: translateY(10px);
+    transform: translateY(2px);
     box-shadow: 0 5px 5px var(--font-color);
   }
 }

@@ -1,0 +1,53 @@
+.detail {
+  grid-template-columns: 10% 40% 5% 40% 5%;
+
+  .nav {
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .detail-body {
+    grid-column: 2 / span 1;
+    line-height: 30px;
+  }
+
+  .detail-img {
+    grid-column: 4 / span 1;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+.techskill {
+  .nav {
+    margin: 10px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .tech-icons {
+    height: 60vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .item,
+    .hover-item {
+      width: 7vw;
+      height: 7vw;
+      font-size: 1.2em;
+      margin: 5px 20px;
+    }
+
+    .item img {
+      width: 4vw;
+      height: 4vw;
+      object-fit: contain;
+    }
+  }
+}

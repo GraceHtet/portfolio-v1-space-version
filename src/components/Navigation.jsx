@@ -9,7 +9,7 @@ const Navigation = ({section, type, className}) => {
     <ul className={className}>
       {(section !== 'hero') && (
       <li>
-        <a href="#hero" className='ufo-icon'>
+        <a href="/#hero" className='ufo-icon'>
           <img src={ufo} alt="ufo"/>
         </a>
       </li>)}

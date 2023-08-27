@@ -4,10 +4,10 @@ import { techIcons } from "../../data/icons"
 
 const TechSkill = () => {
   return (
-    <section id='techSkill'>
+    <section id='techSkill' className="techskill grid-center">
       <Navigation section='about'/>
       <h1>Technical skills</h1>
-      <ul>
+      <ul className="tech-icons">
         {techIcons.map((icon)=>(<Item key={icon.id} name={icon.name} route='#techSkill' path={icon.path}/>))}
       </ul>
     </section>
