@@ -1,17 +1,10 @@
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react'
 
 const Button = ({name, link, onClick}) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleClick = (e) => {
-    onClick(e);
-    setIsActive(true);
-  }
   return (
-    <a href={link} className={isActive ? "btn active" : "btn"} onClick={(e)=>{handleClick(e)}}>
+    <a href={link} className={"btn"} onClick={(e)=>{onClick(e)}}>
       <span className='btn-name'>{name}</span>
       {(name === 'Live') ? (
       <FontAwesomeIcon icon={faArrowUpRightFromSquare} />

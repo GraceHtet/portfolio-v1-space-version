@@ -1,18 +1,80 @@
 .contact {
-  overflow-y: auto;
-}
-.contact .icon-group {
-  flex-direction: column;
-}
+  .nav {
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
 
-.contact .item,
-.contact .hover-item {
-  width: 130px;
-  height: 130px;
-  font-size: 1.2em;
-}
+    .ufo-icon {
+      & img {
+        width: 80px;
+        height: 80px;
+      }
 
-.contact .item img {
-  width: 100px;
-  height: 100px;
+      &:hover::after {
+        content: 'HOME';
+        font-size: 12px;
+        left: 50%;
+      }
+    }
+  }
+
+  & h1 {
+    text-align: center;
+  }
+
+  .contact-body {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+  }
+
+  .icon-group {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .item,
+  .hover-item {
+    width: 130px;
+    height: 130px;
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+
+  .item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .form-input,
+  .submit-btn {
+    display: block;
+    width: 50%;
+    background: transparent;
+    color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-family: 'Hack', 'serif';
+  }
+
+  .submit-btn {
+    cursor: pointer;
+
+    &:hover {
+      background-color: #e6e6e6;
+      color: #3c3c3c;
+    }
+  }
+
+  .form-input:focus,
+  .submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px #efd89c;
+  }
+
+  .contact-moon {
+    bottom: -55%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
