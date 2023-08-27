@@ -1,6 +1,6 @@
 .contact {
   .nav {
-    bottom: 25%;
+    top: 65%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -73,7 +73,7 @@
   }
 
   .contact-moon {
-    bottom: -55%;
+    top: 75%;
     left: 50%;
     transform: translateX(-50%);
   }
