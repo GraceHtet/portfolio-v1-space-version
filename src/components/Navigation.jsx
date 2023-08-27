@@ -9,8 +9,8 @@ const Navigation = ({section, type, className}) => {
     <ul className={className}>
       {(section !== 'hero') && (
       <li>
-        <a href="#hero" className='ufo-item'>
-          <img src={ufo} alt="ufo" className="ufo_icon"/>
+        <a href="#hero" className='ufo-icon'>
+          <img src={ufo} alt="ufo"/>
         </a>
       </li>)}
       {(section === 'about' || type === 'page') ? (<Item name={navIcons[0].name} route={navIcons[0].route} path={navIcons[0].path}/>) : (section !== 'contact') && navIcons.map((icon)=>{

@@ -18,6 +18,22 @@ section {
   overflow: hidden;
 }
 
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: absolute;
+}
+
 h1 {
   font-size: 4rem;
 }
@@ -35,11 +51,32 @@ h1 {
   box-shadow: 0 0 5px var(--font-color);
 }
 
-.ufo-item img {
+.ufo-icon {
+  display: inline-block;
   width: 60px;
   height: 60px;
   border: 0;
   box-shadow: none;
+  opacity: 80%;
+  position: relative;
+  transition: all 0.3s ease;
+
+  & img {
+    width: inherit;
+    height: inherit;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
+
+  &:hover::after {
+    content: 'home';
+    font-size: 10px;
+    position: absolute;
+    top: -10%;
+    left: 30%;
+  }
 }
 
 .hover-item {
@@ -51,4 +88,27 @@ h1 {
   font-family: var(--main-font);
   font-size: 9px;
   position: absolute;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px 15px 5px 0;
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--main-color);
+    color: #3c3c3c;
+  }
+
+  &:active {
+    transform: translateY(10px);
+    box-shadow: 0 5px 5px var(--font-color);
+  }
 }

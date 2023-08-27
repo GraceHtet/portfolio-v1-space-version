@@ -15,27 +15,29 @@ const Project = ({type}) => {
   const handleClick = (e) => {
     projects.forEach((project)=>{
       if(project.name === e.target.innerText){
-        setCards(project.pj)
+        setCards(project.pj);
       }
     })
   }
 
 
   return (
-    <section id="project">
+    <section id="project" className="project">
       <Navigation section="project" type={type}/>
       <h1>Projects</h1>
-        {projects.map((pj) => {
-          return (<Button key={pj.id} name={pj.name} link='/#project' handleClick={handleClick}/>)
-        })}
+        <div className="btn-group">
+          {projects.map((pj) => {
+            return (<Button key={pj.id} name={pj.name} link='/#project' onClick={handleClick}/>)
+          })}
+        </div>
         <div className="card-container">
-          <FontAwesomeIcon icon={faAngleLeft} className="arrow" />
+          <FontAwesomeIcon icon={faAngleLeft} className="arrow left-arrow p-abs" />
 
           <ul className="cards">
           {cards.map((card)=>(<Card key={card.id} card={card}/> ))}
           </ul>
 
-          <FontAwesomeIcon icon={faAngleRight} className="arrow"/>
+          <FontAwesomeIcon icon={faAngleRight} className="arrow right-arrow p-abs "/>
         </div>
     </section>
   )
