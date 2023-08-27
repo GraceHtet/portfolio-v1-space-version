@@ -2,7 +2,6 @@ import Navigation from "../../../components/Navigation"
 import moon from  "../../../assets/img/moon.png"
 import mars from "../../../assets/img/mars.svg"
 import style from './Hero.module.css'
-// import './Hero.css';
 
 const Hero = () => {
   return (

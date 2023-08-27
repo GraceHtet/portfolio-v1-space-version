@@ -1,14 +1,31 @@
 .home-about {
-  .intro {
-    width: 60%;
-    font-size: 24px;
-  }
+  display: flex;
+  align-items: center;
 
   .nav {
-    display: grid;
-    place-items: center;
     right: 2%;
     top: 2%;
+  }
+
+  .container {
+    width: 60%;
+    margin-left: 10%;
+  }
+
+  .intro {
+    font-size: 24px;
+    line-height: 60px;
+  }
+
+  .name,
+  .highlight {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .highlight {
+    font-size: 1.2em;
   }
 
   .saturn {
