@@ -30,7 +30,7 @@
   }
 
   .tech-icons {
-    height: 60vh;
+    height: 50vh;
     width: 70%;
     display: flex;
     justify-content: center;
@@ -49,5 +49,11 @@
       height: 4vw;
       object-fit: contain;
     }
+  }
+
+  .about-mars {
+    top: -25%;
+    left: -15%;
+    transform: rotate(135deg);
   }
 }

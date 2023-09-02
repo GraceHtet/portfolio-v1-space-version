@@ -4,6 +4,8 @@ import mars from "../../../assets/img/mars.svg"
 import style from './Hero.module.css'
 
 const Hero = () => {
+  
+  
   return (
     <section id='hero' className={`grid-center ${style.hero}`}>
       <Navigation section="hero" className={`p-abs ${style.nav}`}/>
@@ -14,8 +16,8 @@ const Hero = () => {
           <br/>
           Turn your dream website into a stunning reality.
         </p>
-      <img src={moon} className={`p-abs ${style['hero-moon']}`} alt='moon' />
-      <img src={mars} className={`p-abs ${style['hero-mars']}`} alt='mars' />
+      <img src={moon} className={`p-abs ${style['hero-moon']} planet`} alt='moon' />
+      <img src={mars} className={`p-abs ${style['hero-mars']} planet`} alt='mars' />
     </section>
   )
 }

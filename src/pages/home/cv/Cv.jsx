@@ -13,7 +13,7 @@ const Cv = ({type}) => {
       <div className='cv-body'>
       <img src={cv} className='cv-img' alt='cv'/>
         <Button name='Get CV' link ='https://drive.google.com/file/d/1hpZ8Jhfe8rqFtprV3lQgck5dfVTES6Fs/view?usp=sharing'/>
-        <img src={moon} className='cv-moon p-abs' alt='cv-moon' />
+        <img src={moon} className='cv-moon p-abs planet' alt='cv-moon' />
       </div>
     </section>
   )

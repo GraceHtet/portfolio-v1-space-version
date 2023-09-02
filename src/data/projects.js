@@ -65,17 +65,6 @@ const all = [
   },
   {
     id: 6,
-    name: 'To Do List',
-    description:
-      'The todo-list project is to mark the things to do and to check whether the list to do is completed or not. This is created with HTML, CSS, JavaScript, and Webpack. Also testing for each function with Jest is done in the project.',
-    language: ['JavaScript', 'Webpack', 'GitHub'],
-    type: 'mini',
-    img: todoList,
-    live: 'https://gracehtet.github.io/ToDoList-Webpack-/dist/',
-    source: 'https://github.com/GraceHtet/ToDoList-Webpack-',
-  },
-  {
-    id: 7,
     name: 'Leaderboard',
     description:
       'You can see the scores from others which are fetched from API. And you can also add your score. Once you refresh the page, you will see your result in the table.',
@@ -86,7 +75,7 @@ const all = [
     source: 'https://github.com/GraceHtet/leaderboard',
   },
   {
-    id: 8,
+    id: 7,
     name: 'Math Magician',
     description:
       'This is the calculator page where you can do arithmetical operations. You can do addition, subtraction, multiplication, division.',
@@ -95,6 +84,17 @@ const all = [
     img: mathMagician,
     live: 'https://math-magician-8u3i.onrender.com/',
     source: 'https://github.com/GraceHtet/mathMagician',
+  },
+  {
+    id: 8,
+    name: 'To Do List',
+    description:
+      'The todo-list project is to mark the things to do and to check whether the list to do is completed or not. This is created with HTML, CSS, JavaScript, and Webpack. Also testing for each function with Jest is done in the project.',
+    language: ['JavaScript', 'Webpack', 'GitHub'],
+    type: 'mini',
+    img: todoList,
+    live: 'https://gracehtet.github.io/ToDoList-Webpack-/dist/',
+    source: 'https://github.com/GraceHtet/ToDoList-Webpack-',
   },
 ];
 

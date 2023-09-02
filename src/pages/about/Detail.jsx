@@ -17,7 +17,7 @@ const Detail = () => {
         <a href='/project' className="btn">Project &gt;&gt;</a>
       </div>  
 
-      <img src={grace} className='detail-img' alt='grace'/>
+      <img src={grace} className='detail-img ' alt='grace'/>
     </section>
   )
 }

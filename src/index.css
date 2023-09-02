@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  background-color: #3c3c3c;
+  --background-color: #3c3c3c;
 
   --font-color: #e6e6e6;
   --main-color: #efd89c;
@@ -57,4 +57,130 @@ a {
 
 .m-font {
   font-family: var(--main-font);
+}
+
+.burger-icon {
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+  box-shadow: 0 0 5px var(--font-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.nav-bg {
+  display: none;
+  width: 100%;
+  top: 70%;
+}
+
+.burger-icon:hover {
+  box-shadow: 0 0 10px var(--font-color);
+}
+
+.line {
+  height: 2px;
+  display: inline-block;
+  background: var(--font-color);
+
+  transition: all 0.3s linear;
+}
+
+.line1 {
+  width: 14px;
+}
+
+.line2 {
+  width: 20px;
+  margin: 3px 0;
+}
+
+.line3 {
+  width: 8px;
+}
+
+.toggle-active {
+  width: 100%;
+  height: 100vh;
+  background: var(--background-color);
+  background-image: url('./assets/img/starbg.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 100;
+  margin: 0;
+
+  .line1,
+  .line3 {
+    width: 20px;
+  }
+
+  .line1 {
+    transform: rotate(45deg) translate(4px, 3px);
+  }
+
+  .line2 {
+    opacity: 0;
+  }
+
+  .line3 {
+    transform: rotate(-45deg) translate(4px, -3px);
+  }
+
+  .nav-bg {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item,
+  .hover-item {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: calc(36px + (50 - 36) * (100vw - 300px) / (768 - 300));
+    margin: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    padding-top: 50px;
+  }
+
+  .burger-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
 }

@@ -6,7 +6,7 @@ import { techIcons } from "../data/icons"
 const Card = ({card}) => {
 
   return (
-    <li className="card-item">
+    <div className="card-item">
       <img src={card.img} alt={card.name} className="card-img"/>
       <div className="card-info">
         <h2 className="card-title">{card.name}</h2>
@@ -23,7 +23,7 @@ const Card = ({card}) => {
           <Button name='Source' link={card.source} />
         </div>
       </div>
-    </li>
+    </div>
   )
 }
 

@@ -6,8 +6,8 @@ import './HomeAbout.css';
 const HomeAbout = () => {
   return (
 
-    <section id="homeAbout" className="home-about">
-      <Navigation section='homeAbout' className='grid-center nav'/>
+    <section id="homeAbout" className="home-about" >
+      <Navigation section='homeAbout' className='nav'/>
       <div className='container'>
         <h1>About me</h1>
         <p className='intro'>
@@ -17,7 +17,7 @@ const HomeAbout = () => {
         </p>
         <Button name='See more...' link='/about'/>
       </div>
-      <img src={saturn} className='saturn' alt={saturn} />
+      <img src={saturn} className='saturn planet' alt={saturn} />
     
     </section>
   )

@@ -58,14 +58,50 @@
         align-items: center;
       }
 
-      .btn-name {
-        padding: 0 10px;
+      .btn-img {
+        margin-left: 10px;
       }
     }
   }
-}
 
-/* .icon-group .item img {
-  width: 25px;
-  height: 25px;
-} */
+  @media (max-width: 768px) {
+    height: fit-content;
+    .btn-group {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .card-container {
+      & p {
+        font-size: 14px;
+      }
+
+      & .card-item {
+        height: 80vh;
+
+        justify-content: flex-start;
+        flex-direction: column;
+
+        margin-top: 10%;
+
+        .card-img,
+        .card-info {
+          width: 70%;
+          height: 30vh;
+
+          object-position: top 0 left 30%;
+        }
+
+        .btn-group {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .nav {
+      display: none;
+    }
+  }
+}

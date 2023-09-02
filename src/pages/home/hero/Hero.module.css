@@ -3,7 +3,7 @@
 }
 
 .nav {
-  margin: 10px;
+  padding: 10px;
   top: 0;
   left: 0;
 }
@@ -29,4 +29,40 @@
   width: 50%;
   top: -60%;
   right: -20%;
+}
+
+@media (max-width: 768px) {
+  .hero-moon {
+    top: 70%;
+  }
+
+  .hero-mars {
+    top: -20%;
+    right: -25%;
+  }
+
+  .greet-text {
+    width: 90%;
+    font-size: calc(14px + (18 - 14) * (100vw - 300px) / (768 - 300));
+  }
+
+  .name {
+    line-height: 2;
+    font-size: calc(40px + (48 - 40) * (100vw - 300px) / (768 - 300));
+  }
+}
+
+@media (max-width: 500px) {
+  .nav ul {
+    display: none;
+  }
+
+  .hero-moon {
+    width: 100%;
+  }
+
+  .hero-mars {
+    top: -20%;
+    right: -25%;
+  }
 }

@@ -19,12 +19,9 @@ const Contact = () => {
       <ul className='icon-group'>
         {contactIcons.map((icon)=>(<Item key={icon.id} name={icon.name} route={icon.route} path={icon.path} />))}
       </ul>
-      <img src={profile} alt='Profile' />
+      <img src={profile} className="profile" alt='Profile' />
 
       <form onSubmit={handleSubmit} className="grid-center">
-        {/* <label htmlFor="name">
-          Name
-        </label> */}
         <input 
           id="name" 
           type="text" 
@@ -33,9 +30,6 @@ const Contact = () => {
           className="form-input" 
           required
         />
-        {/* <label htmlFor="email">
-          Email
-        </label> */}
         <input
           id="email"
           type="email" 
@@ -49,9 +43,6 @@ const Contact = () => {
           field="email"
           errors={state.errors}
         />
-        {/* <label htmlFor="message">
-          Message
-        </label> */}
         <textarea
           id="message"
           name="message"
@@ -65,7 +56,7 @@ const Contact = () => {
           Start Collaboration
         </button>
       </form>
-      <img src={moon} className='contact-moon p-abs' alt='moon' />
+      <img src={moon} className='contact-moon p-abs planet' alt='moon' />
       </div>
     </section>
   )

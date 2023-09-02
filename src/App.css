@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   background-color: #3c3c3c;
 
@@ -5,10 +9,6 @@
   --main-color: #efd89c;
   --heading-font: 'Hack', 'serif';
   --main-font: 'Georama', sans-serif;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 section {
@@ -105,13 +105,22 @@ h1 {
   border: 2px solid var(--main-color);
   border-radius: 50px;
 
-  &:hover {
-    background-color: var(--main-color);
-    color: #3c3c3c;
-  }
-
   &:active {
     transform: translateY(2px);
     box-shadow: 0 5px 5px var(--font-color);
   }
+}
+
+.btn:hover,
+.project .btn-group .active {
+  background-color: var(--main-color);
+  color: #3c3c3c;
+}
+
+.planet {
+  width: 35vw;
+}
+
+.disable {
+  display: none;
 }

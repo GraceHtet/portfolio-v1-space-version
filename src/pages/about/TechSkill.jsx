@@ -1,6 +1,7 @@
 import Navigation from "../../components/Navigation"
 import Item from "../../components/Item"
 import { techIcons } from "../../data/icons"
+import mars from "../../assets/img/mars2.svg"
 
 const TechSkill = () => {
   return (
@@ -10,6 +11,7 @@ const TechSkill = () => {
       <ul className="tech-icons">
         {techIcons.map((icon)=>(<Item key={icon.id} name={icon.name} route='#techSkill' path={icon.path}/>))}
       </ul>
+      <img src={mars} className='about-mars p-abs planet' alt='mars' />
     </section>
   )
 }
