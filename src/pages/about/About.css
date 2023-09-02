@@ -14,11 +14,32 @@
 
   .detail-img {
     grid-column: 4 / span 1;
+    width: 100%;
   }
 
   .btn {
     font-size: 14px;
     padding: 5px 10px;
+  }
+
+  @media (max-width: 768px) {
+    height: fit-content;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 90vh;
+
+    .detail-body {
+      width: 70%;
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+      line-height: 30px;
+    }
+
+    .detail-img {
+      width: 80%;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+    }
   }
 }
 
@@ -40,7 +61,8 @@
     .hover-item {
       width: 7vw;
       height: 7vw;
-      font-size: 1.2em;
+      font-size: 1em;
+      text-overflow: ellipsis;
       margin: 5px 20px;
     }
 
@@ -55,5 +77,35 @@
     top: -25%;
     left: -15%;
     transform: rotate(135deg);
+  }
+
+  @media (max-width: 768px) {
+    height: fit-content;
+
+    .tech-icons {
+      height: 100vh;
+      width: 80%;
+      align-items: center;
+
+      .item,
+      .hover-item {
+        width: 80px;
+        height: 80px;
+
+        text-overflow: clip;
+      }
+
+      .item img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+    }
+
+    .about-mars {
+      top: -25%;
+      left: -15%;
+      transform: rotate(135deg);
+    }
   }
 }

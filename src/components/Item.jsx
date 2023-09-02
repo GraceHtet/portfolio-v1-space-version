@@ -13,11 +13,12 @@ const Item = ({ name, route, path, handleClick}) => {
   }
   return (
     <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} onClick={handleClick}>
-      <a href={route}>
+      <a href={route} className='item-container'>
         
         <span className='item'>
         {isHovering && <span className="hover-item">{name}</span>}
-          <img src={path} alt={name} width='20px' height='20px' className={name.toLowerCase()}/></span>
+          <img src={path} alt={name} width='20px' height='20px' className={name.toLowerCase()}/>
+        </span>
       </a>
     </li>
   )
