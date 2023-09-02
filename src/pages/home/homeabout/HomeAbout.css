@@ -48,6 +48,7 @@
 
   @media (max-width: 500px) {
     justify-content: center;
+
     .container {
       text-align: center;
       margin: 0;

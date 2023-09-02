@@ -3,7 +3,6 @@
 
 :root {
   --background-color: #3c3c3c;
-
   --font-color: #e6e6e6;
   --main-color: #efd89c;
   --heading-font: 'Hack', 'serif';
@@ -87,7 +86,6 @@ a {
   height: 2px;
   display: inline-block;
   background: var(--font-color);
-
   transition: all 0.3s linear;
 }
 

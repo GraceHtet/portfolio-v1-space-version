@@ -1,23 +1,4 @@
 .contact {
-  .nav {
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    .ufo-icon {
-      & img {
-        width: 80px;
-        height: 80px;
-      }
-
-      &:hover::after {
-        content: 'HOME';
-        font-size: 12px;
-        left: 50%;
-      }
-    }
-  }
-
   & h1 {
     text-align: center;
   }
@@ -59,12 +40,12 @@
     border: 1.5px solid #e6e6e6;
     border-radius: 50px;
     padding: 3% 4%;
-    font-family: 'Hack', 'serif';
+    font-family: 'Hack', sans-serif;
   }
 
   .submit-btn {
     cursor: pointer;
-    font-family: 'Hack Bold', 'serif';
+    font-family: 'Hack Bold', sans-serif;
 
     &:hover {
       background-color: #e6e6e6;
@@ -88,10 +69,30 @@
     transform: translateX(-50%);
   }
 
+  .nav {
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .ufo-icon {
+      & img {
+        width: 80px;
+        height: 80px;
+      }
+
+      &:hover::after {
+        content: 'HOME';
+        font-size: 12px;
+        left: 50%;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
-    height: fit-content;
+    height: auto;
+
     .contact-body {
-      height: fit-content;
+      height: auto;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 30vh 30vh 80vh 30vh;

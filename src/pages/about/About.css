@@ -23,7 +23,7 @@
   }
 
   @media (max-width: 768px) {
-    height: fit-content;
+    height: auto;
     text-align: center;
     grid-template-columns: 1fr;
     grid-template-rows: 50vh 90vh;
@@ -80,7 +80,7 @@
   }
 
   @media (max-width: 768px) {
-    height: fit-content;
+    height: auto;
 
     .tech-icons {
       height: 100vh;
@@ -91,7 +91,6 @@
       .hover-item {
         width: 80px;
         height: 80px;
-
         text-overflow: clip;
       }
 
