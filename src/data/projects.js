@@ -4,7 +4,7 @@ import challengeCode from '../assets/img/projects/challengeCode.png';
 import spiritualEvent from '../assets/img/projects/spiritualEvent.png';
 import spaceTraveller from '../assets/img/projects/spaceTraveller.png';
 import todoList from '../assets/img/projects/todolist.png';
-import leaderBoard from '../assets/img/projects/leaderboard.png';
+import leaderBoard from '../assets/img/projects/leaderBoard.png';
 import mathMagician from '../assets/img/projects/mathMagician.png';
 
 const all = [
