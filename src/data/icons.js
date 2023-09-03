@@ -26,31 +26,31 @@ const navIcons = [
   {
     id: 1,
     name: 'home',
-    route: '/portfolio-v1-space-version/#hero',
+    route: '/#hero',
     path: heroIcon,
   },
   {
     id: 2,
     name: 'about',
-    route: '/portfolio-v1-space-version/#homeAbout',
+    route: '/#homeAbout',
     path: aboutIcon,
   },
   {
     id: 3,
     name: 'project',
-    route: '/portfolio-v1-space-version/#project',
+    route: '/#project',
     path: projectIcon,
   },
   {
     id: 4,
     name: 'cv',
-    route: '/portfolio-v1-space-version/cv',
+    route: '/cv',
     path: cvIcon,
   },
   {
     id: 5,
     name: 'contact',
-    route: '/portfolio-v1-space-version/#contact',
+    route: '/#contact',
     path: contactIcon,
   },
 ];
