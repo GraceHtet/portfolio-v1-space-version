@@ -14,7 +14,7 @@ const Detail = () => {
         <br/>
         I can help you build a product, feature, or website. Take a look at my works.
         </p>
-        <a href='/project' className="btn">Project &gt;&gt;</a>
+        <a href='/portfolio-v1-space-version/project' className="btn">Project &gt;&gt;</a>
       </div>  
 
       <img src={grace} className='detail-img ' alt='grace'/>
