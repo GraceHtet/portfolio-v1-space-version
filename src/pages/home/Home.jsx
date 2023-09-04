@@ -9,12 +9,19 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 4000);
-  },[]);
+    const hasLoadingScreenBeenShown = sessionStorage.getItem("loadingScreenShown");
 
-  console.log(loading);
+    if (hasLoadingScreenBeenShown) {
+      setLoading(false);
+      
+    } else {      
+      setTimeout(() => {
+        setLoading(false);
+        
+      sessionStorage.setItem("loadingScreenShown", "true");
+      }, 4000);
+    }
+  },[]);
   
   return (
     <>

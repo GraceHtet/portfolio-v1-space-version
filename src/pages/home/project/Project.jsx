@@ -48,7 +48,7 @@ const Project = ({type}) => {
       <h1>Projects</h1>
         <div className="btn-group">
           {projects.map((pj) => {
-            return (<Button key={pj.id} name={pj.name} link='/#project' active={current === pj.name} onClick={handleClick}/>)
+            return (<Button key={pj.id} name={pj.name} link='#project' active={current === pj.name} onClick={handleClick}/>)
           })}
         </div>
         <div className="card-container">
