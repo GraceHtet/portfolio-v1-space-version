@@ -9,19 +9,19 @@ const Hero = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  const textStyle = {
+  const fadeIn = {
     opacity: isInView ? 1 : 0,
     transition: "all 2s ease-in-out 0.5s"
   }
 
   
-  const marsStyle = {
+  const fadeRightDown = {
     transform: isInView ? "translate(0%)" : "translate(50%,-50%)",
     transition: "all 1s ease-in-out 0.5s"
   }
 
   
-  const moonStyle = {
+  const fadeUp = {
     transform: isInView ? "translate(-50%, 0%)" : "translate(-50%,50%)",
     transition: "all 1s ease-in-out 0.5s"
   }
@@ -30,15 +30,15 @@ const Hero = () => {
   return (
     <section ref={ref} id='hero' className={`grid-center ${style.hero}`}>
       <Navigation section="hero" className={`p-abs ${style.nav}`}/>
-        <p className={`f-color h-font ${style['greet-text']}`} style={textStyle}>
+        <p ref={ref} className={`f-color h-font ${style['greet-text']}`} style={fadeIn}>
           Hey there,
           <br/>
           <span className={style.name}>I&apos;m Grace.</span>
           <br/>
           Turn your dream website into a stunning reality.
         </p>
-      <img src={moon} className={`p-abs ${style['hero-moon']} planet`} style={moonStyle} alt='moon' />
-      <img src={mars} className={`p-abs ${style['hero-mars']} planet`} style={marsStyle} alt='mars' />
+      <img src={moon} className={`p-abs ${style['hero-moon']} planet`} style={fadeUp} alt='moon' />
+      <img src={mars} className={`p-abs ${style['hero-mars']} planet`} style={fadeRightDown} alt='mars' />
     </section>
   )
 }

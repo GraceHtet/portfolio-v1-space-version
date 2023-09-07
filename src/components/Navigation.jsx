@@ -5,7 +5,7 @@ import ufo from '../assets/img/icon/nav/ufo.svg';
 import moon from '../assets/img/moon.png';
 import { useState } from 'react';
 
-const Navigation = ({section, type, className}) => {
+const Navigation = ({section, type, className, style}) => {
 
   const [active, setActive] = useState(false);
 
@@ -27,7 +27,7 @@ const Navigation = ({section, type, className}) => {
       <ul className='menu'>
         {(section !== 'hero') && (
         <li>
-          <a href="/#hero" className='ufo-icon' onClick={handleClick}>
+          <a href="/#hero" className='ufo-icon' onClick={handleClick} style={style}>
             <img src={ufo} alt="ufo"/>
           </a>
         </li>)}
@@ -44,12 +44,15 @@ const Navigation = ({section, type, className}) => {
 Navigation.propTypes = {
   section: PropTypes.string.isRequired,
   type: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
+  style: PropTypes.object,
+
 }
 
 Navigation.defaultProps = {
   type: '',
   className: 'nav',
+  style: {},
 }
 
 export default Navigation;

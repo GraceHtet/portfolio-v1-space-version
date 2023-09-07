@@ -7,8 +7,17 @@ import Button from "../../../components/Button"
 import Card from "../../../components/Card"
 import projects from "../../../data/projects"
 import './Project.css';
+import { useRef } from "react"
+import { useInView } from "framer-motion"
 
 const Project = ({type}) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const fadeIn = {
+    opacity: isInView ? 1 : 0,
+    transition: "all 2s ease-in-out 0.5s"
+  }
 
   const [cards, setCards]= useState(projects[0].pj);
   const [current, setCurrent] = useState(projects[0].name);
@@ -45,13 +54,13 @@ const Project = ({type}) => {
   return (
     <section id="project" className="project">
       <Navigation section="project" type={type}/>
-      <h1>Projects</h1>
+      <h1 ref={ref}>Projects</h1>
         <div className="btn-group">
           {projects.map((pj) => {
             return (<Button key={pj.id} name={pj.name} link='#project' active={current === pj.name} onClick={handleClick}/>)
           })}
         </div>
-        <div className="card-container">
+        <div className="card-container" style={fadeIn}>
           <FontAwesomeIcon icon={faAngleLeft} className={`arrow left-arrow p-abs ${(leftDisable || idx === 0) && 'disable'}`} onClick={handleBackward}/>
 
           <Card card={cards[idx]}/>

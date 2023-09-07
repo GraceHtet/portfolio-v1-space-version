@@ -31,6 +31,12 @@
     width: 20vw;
   }
 
+  .msg {
+    color: rgb(53, 184, 53);
+    text-align: center;
+    font-style: italic;
+  }
+
   .form-input,
   .submit-btn {
     display: block;

@@ -38,7 +38,7 @@ const all = [
     language: ['JavaScript', 'React', 'Netlify'],
     type: 'solo',
     img: challengeCode,
-    live: 'https://money-tracker-rails-6abdef4b7828.herokuapp.com/',
+    live: 'https://challengecode.netlify.app/',
     source: 'https://github.com/GraceHtet/budget-app',
   },
   {
