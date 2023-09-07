@@ -52,6 +52,11 @@
         width: 40%;
       }
 
+      .item,
+      .hover-item {
+        font-size: 7px;
+      }
+
       .btn {
         font-size: 14px;
         display: inline-flex;

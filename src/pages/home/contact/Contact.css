@@ -120,6 +120,7 @@
         .hover-item {
           width: 80px;
           height: 80px;
+          font-size: 1em;
         }
 
         .item img {

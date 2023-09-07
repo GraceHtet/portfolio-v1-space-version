@@ -20,9 +20,9 @@ const TechSkill = () => {
     transition: "all 1s ease-in-out 0.5s"
   }
   return (
-    <section id='techSkill' className="techskill grid-center">
+    <section ref={ref} id='techSkill' className="techskill grid-center">
       <Navigation section='about'/>
-      <h1 ref={ref}>Technical skills</h1>
+      <h1 >Technical skills</h1>
       <ul className="tech-icons" style={fadeIn}>
         {techIcons.map((icon)=>(<Item key={icon.id} name={icon.name} route='#techSkill' path={icon.path}/>))}
       </ul>
