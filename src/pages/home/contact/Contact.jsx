@@ -45,9 +45,9 @@ const Contact = () => {
   },[state.succeeded]);
   
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact"  ref={ref}>
       <Navigation section="contact" style={fadeIn}/> 
-      <h1 ref={ref}>Contact</h1>
+      <h1>Contact</h1>
       <div className="contact-body">
       <ul className='icon-group' style={fadeIn}>
         {contactIcons.map((icon)=>(<Item key={icon.id} name={icon.name} route={icon.route} path={icon.path} />))}
