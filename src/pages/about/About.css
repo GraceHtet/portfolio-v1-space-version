@@ -26,7 +26,7 @@
     height: auto;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 50vh 90vh;
+    grid-template-rows: 50vh 120vh;
 
     .detail-body {
       width: 70%;
@@ -80,10 +80,8 @@
   }
 
   @media (max-width: 768px) {
-    height: auto;
-
     .tech-icons {
-      height: 100vh;
+      height: auto;
       width: 80%;
       align-items: center;
 
@@ -106,6 +104,13 @@
       top: -25%;
       left: -15%;
       transform: rotate(135deg);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    height: auto;
+    .tech-icons {
+      width: 90%;
     }
   }
 }
