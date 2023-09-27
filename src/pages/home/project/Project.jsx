@@ -52,9 +52,9 @@ const Project = ({type}) => {
 
 
   return (
-    <section id="project" className="project">
+    <section ref={ref} id="project" className="project">
       <Navigation section="project" type={type}/>
-      <h1 ref={ref}>Projects</h1>
+      <h1 >Projects</h1>
         <div className="btn-group">
           {projects.map((pj) => {
             return (<Button key={pj.id} name={pj.name} link='#project' active={current === pj.name} onClick={handleClick}/>)
