@@ -28,7 +28,7 @@ const Cv = ({type}) => {
       <h1>CV</h1>
       <div className='cv-body' style={fadeIn}>
       <img src={cv} className='cv-img' alt='cv'/>
-        <Button name='Get CV' link ='https://drive.google.com/file/d/1H0tgnl-FarJkRcrGvecGBv88uc5zXwKR/view?usp=sharing'/>
+        <Button name='Get CV' link ='https://drive.google.com/file/d/1mUbIqkROYFC-uwY0cYNITxLu8TboNkba/view?usp=sharing'/>
         <img src={moon} className='cv-moon p-abs planet' style={fadeUp} alt='cv-moon' />
       </div>
     </section>
