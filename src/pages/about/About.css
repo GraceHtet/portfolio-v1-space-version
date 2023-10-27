@@ -1,0 +1,117 @@
+.detail {
+  grid-template-columns: 10% 40% 5% 40% 5%;
+
+  .nav {
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .detail-body {
+    grid-column: 2 / span 1;
+    line-height: 30px;
+  }
+
+  .detail-img {
+    grid-column: 4 / span 1;
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 120vh;
+
+    .detail-body {
+      width: 70%;
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+      line-height: 30px;
+    }
+
+    .detail-img {
+      width: 80%;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+    }
+  }
+}
+
+.techskill {
+  .nav {
+    margin: 10px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .tech-icons {
+    height: 50vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .item,
+    .hover-item {
+      width: 7vw;
+      height: 7vw;
+      font-size: 1em;
+      text-overflow: ellipsis;
+      margin: 5px 20px;
+    }
+
+    .item img {
+      width: 4vw;
+      height: 4vw;
+      object-fit: contain;
+    }
+  }
+
+  .about-mars {
+    top: -25%;
+    left: -15%;
+    transform: rotate(135deg);
+  }
+
+  @media (max-width: 768px) {
+    .tech-icons {
+      height: auto;
+      width: 80%;
+      align-items: center;
+
+      .item,
+      .hover-item {
+        width: 80px;
+        height: 80px;
+        font-size: 0.9em;
+        text-overflow: clip;
+      }
+
+      .item img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+    }
+
+    .about-mars {
+      top: -25%;
+      left: -15%;
+      transform: rotate(135deg);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    height: auto;
+
+    .tech-icons {
+      width: 90%;
+    }
+  }
+}

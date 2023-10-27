@@ -1,0 +1,151 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  background-color: #3c3c3c;
+
+  --font-color: #e6e6e6;
+  --main-color: #efd89c;
+  --heading-font: 'Hack', 'serif';
+  --main-font: 'Georama', sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: absolute;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.item,
+.hover-item {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--font-color);
+}
+
+.item img {
+  object-fit: contain;
+}
+
+.ufo-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  box-shadow: none;
+  opacity: 80%;
+  position: relative;
+  transition: all 0.3s ease;
+
+  & img {
+    width: inherit;
+    height: inherit;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
+
+  &:hover::after {
+    content: 'home';
+    font-size: 10px;
+    position: absolute;
+    top: -10%;
+    left: 30%;
+  }
+}
+
+.hover-item {
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--font-color);
+  text-align: center;
+  line-height: 3;
+  font-weight: bold;
+  font-family: var(--main-font);
+  font-size: 9px;
+  position: absolute;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px 15px 5px 0;
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 5px var(--font-color);
+  }
+}
+
+.btn:hover,
+.project .btn-group .active {
+  background-color: var(--main-color);
+  color: #3c3c3c;
+}
+
+.planet {
+  width: 35vw;
+}
+
+.disable {
+  display: none;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+}
+
+.ufo-loading {
+  width: 50%;
+  animation: ufoLoading 1.8s ease-in-out 0s infinite;
+}
+
+@keyframes ufoLoading {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
