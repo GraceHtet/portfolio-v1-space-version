@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Navigation from "../../../components/Navigation"
 import Button from "../../../components/Button"
-import cv from "../../../assets/img/cv.png"
+import cv from "../../../assets/img/cv.jpg"
 import moon from "../../../assets/img/moon2.svg"
 import './Cv.css'
 import { useRef } from 'react';
@@ -28,7 +28,7 @@ const Cv = ({type}) => {
       <h1>CV</h1>
       <div className='cv-body' style={fadeIn}>
       <img src={cv} className='cv-img' alt='cv'/>
-        <Button name='Get CV' link ='https://drive.google.com/file/d/1mUbIqkROYFC-uwY0cYNITxLu8TboNkba/view?usp=sharing'/>
+        <Button name='Get CV' link ='https://docs.google.com/document/d/1S8qfVgXchDS1zdEpe9wvTZ8ydK-TRD4iYAF24LjSyos/edit?usp=drive_link'/>
         <img src={moon} className='cv-moon p-abs planet' style={fadeUp} alt='cv-moon' />
       </div>
     </section>
