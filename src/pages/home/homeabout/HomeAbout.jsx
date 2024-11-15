@@ -22,7 +22,7 @@ const HomeAbout = () => {
         <h1 ref={ref}>About me</h1>
         <p className='intro'>
           Hello!<br/>
-          I am <span className="name">Thiri Htet Htet Aung</span> (aka <span className="name">Grace</span>),<br/> <span className="highlight">React-Ruby On Rails</span> developer. <br/>
+          I am <span className="name">Thiri Htet Htet Aung</span> (aka <span className="name">Grace</span>),<br/><i>Mid-Level</i> <span className="highlight">Ruby On Rails</span> developer. <br/>
             I have always been passionate about creating and designing websites that are both visually appealing and user-friendly.
         </p>
         <Button name='See more...' link='/about'/>
