@@ -14,7 +14,7 @@ import jest from '../assets/img/icon/tech/jest.png';
 import rspec from '../assets/img/icon/tech/rspec.png';
 import github from '../assets/img/icon/tech/GitHub.png';
 import figma from '../assets/img/icon/tech/Figma.png';
-import heroku from '../assets/img/icon/tech/Rails.png';
+import heroku from '../assets/img/icon/tech/Heroku.png';
 import postman from '../assets/img/icon/tech/Postman.png';
 import render from '../assets/img/icon/tech/render.png';
 import netlify from '../assets/img/icon/tech/netlify.png';

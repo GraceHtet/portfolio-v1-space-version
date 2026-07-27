@@ -14,13 +14,13 @@ const Card = ({card}) => {
         <ul className="icon-group">
         {techIcons.map((tech)=>{
           if(card.language.includes(tech.name)) {
-            return (<Item key={crypto.randomUUID()} name={tech.name} route='#project' path={tech.path}/>)
+            return (<Item key={tech.id} name={tech.name} route='#project' path={tech.path}/>)
           }
         })}
         </ul>
         <div className="btn-group">
           <Button name='Live' link={card.live} />
-          <Button name='Source' link={card.source} />
+          {card.source && <Button name='Source' link={card.source} />}
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import docwright from '../assets/img/projects/docwright.svg';
 import moneyTracker from '../assets/img/projects/moneyTracker.png';
 import houseRent from '../assets/img/projects/houseRent.png';
 import challengeCode from '../assets/img/projects/challengeCode.png';
@@ -39,7 +40,6 @@ const all = [
     type: 'solo',
     img: challengeCode,
     live: 'https://challengecode.netlify.app/',
-    source: 'https://github.com/GraceHtet/budget-app',
   },
   {
     id: 4,
@@ -61,7 +61,6 @@ const all = [
     type: 'group',
     img: spaceTraveller,
     live: 'https://space-traveler-hub-qaca.onrender.com/',
-    source: 'https://github.com/alexiscyber14/house-rent-backend',
   },
   {
     id: 6,
@@ -95,6 +94,17 @@ const all = [
     img: todoList,
     live: 'https://gracehtet.github.io/ToDoList-Webpack-/dist/',
     source: 'https://github.com/GraceHtet/ToDoList-Webpack-',
+  },
+  {
+    id: 9,
+    name: 'DocWright',
+    description:
+      'DocWright introspects your live Rails app to auto-generate structured markdown documentation for your database schema, API routes, models, services, and background jobs — preserving human-written content across regenerations.',
+    language: ['Ruby', 'Rails', 'Rspec', 'GitHub'],
+    type: 'solo',
+    img: docwright,
+    live: 'https://rubygems.org/gems/docwright',
+    source: 'https://github.com/GraceHtet/docwright',
   },
 ];
 

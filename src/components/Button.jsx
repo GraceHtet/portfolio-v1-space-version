@@ -3,9 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const Button = ({name, link, onClick,active}) => {
+  const isExternal = /^https?:\/\//.test(link);
 
   return (
-    <a href={link} className={`btn ${active && 'active'}`} onClick={(e)=>{onClick(e)}}>
+    <a
+      href={link}
+      className={`btn ${active && 'active'}`}
+      onClick={(e)=>{onClick(e)}}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
+    >
       {name}
       {(name === 'Live') ? (
       <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='btn-img' />

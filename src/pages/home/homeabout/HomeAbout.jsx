@@ -27,7 +27,7 @@ const HomeAbout = () => {
         </p>
         <Button name='See more...' link='/about'/>
       </div>
-      <img src={saturn} className='saturn planet' style={saturnStyle} alt={saturn} />
+      <img src={saturn} className='saturn planet' style={saturnStyle} alt='saturn' />
     
     </section>
   )

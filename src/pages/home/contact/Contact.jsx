@@ -55,7 +55,7 @@ const Contact = () => {
       <img src={profile} className="profile" alt='Profile' style={fadeIn}/>
 
       <form onSubmit={handleSubmit} className="grid-center" style={fadeIn}>
-      {isSubmitted && (<p className="msg">Thanks for interesting.</p>)}
+      {isSubmitted && (<p className="msg">Thanks for your interest.</p>)}
         <input
           ref={nameRef}
           id="name" 

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#1c1c1c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="800" fill="url(#bg)"/>
+
+  <!-- terminal window -->
+  <rect x="90" y="90" width="1100" height="620" rx="14" fill="#111214" stroke="#3c3c3c" stroke-width="2"/>
+
+  <!-- title bar -->
+  <rect x="90" y="90" width="1100" height="46" rx="14" fill="#232323"/>
+  <rect x="90" y="122" width="1100" height="14" fill="#232323"/>
+  <circle cx="122" cy="113" r="7" fill="#ff5f56"/>
+  <circle cx="146" cy="113" r="7" fill="#ffbd2e"/>
+  <circle cx="170" cy="113" r="7" fill="#27c93f"/>
+  <text x="640" y="118" font-family="Menlo, Consolas, monospace" font-size="15" fill="#8a8a8a" text-anchor="middle">docwright — rake docwright:generate</text>
+
+  <!-- body -->
+  <g font-family="Menlo, Consolas, monospace" font-size="19" fill="#e6e6e6">
+    <text x="122" y="185"><tspan fill="#efd89c">$</tspan> rake docwright:generate</text>
+
+    <text x="122" y="230" fill="#8a8a8a">DocWright is scanning your Rails app…</text>
+
+    <text x="122" y="270" fill="#7fd88f">✓</text>
+    <text x="150" y="270">models, routes, and API endpoints found</text>
+
+    <text x="122" y="300" fill="#7fd88f">✓</text>
+    <text x="150" y="300">background jobs and service objects found</text>
+
+    <text x="122" y="345" fill="#efd89c">Generate documentation? (y/n)</text>
+    <text x="470" y="345" fill="#e6e6e6">y</text>
+
+    <text x="122" y="390" fill="#7fd88f">✓</text>
+    <text x="150" y="390">docs/database.md</text>
+    <text x="122" y="420" fill="#7fd88f">✓</text>
+    <text x="150" y="420">docs/api.md</text>
+    <text x="122" y="450" fill="#7fd88f">✓</text>
+    <text x="150" y="450">docs/models.md</text>
+
+    <text x="122" y="495" fill="#8a8a8a">Walking through manual templates…</text>
+    <text x="122" y="530">docs/overview.md</text>
+    <text x="122" y="560" fill="#efd89c">  [w]rite  [e]ditor  [s]kip</text>
+
+    <text x="122" y="620" fill="#8a8a8a">Human-written content is preserved across regenerations.</text>
+
+    <text x="122" y="665"><tspan fill="#efd89c">$</tspan> <tspan fill="#e6e6e6">▌</tspan></text>
+  </g>
+
+  <!-- wordmark -->
+  <text x="640" y="775" font-family="Hack, monospace" font-size="26" fill="#efd89c" text-anchor="middle" letter-spacing="2">DocWright</text>
+</svg>
