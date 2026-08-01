@@ -102,14 +102,14 @@ a {
   width: 8px;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   h1 {
     font-size: calc(36px + (50 - 36) * (100vw - 300px) / (768 - 300));
     margin: 20px;
   }
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
   section {
     padding-top: 50px;
   }
