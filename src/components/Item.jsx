@@ -11,9 +11,16 @@ const Item = ({ name, route, path, handleClick}) => {
   const handleMouseOut = () => {
     setIsHovering(false);
   }
+  const isExternal = /^https?:\/\//.test(route);
+
   return (
     <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} onClick={handleClick}>
-      <a href={route} className='item-container'>
+      <a
+        href={route}
+        className='item-container'
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
+      >
         
         <span className='item'>
         {isHovering && <span className="hover-item">{name}</span>}

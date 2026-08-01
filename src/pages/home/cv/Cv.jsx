@@ -28,7 +28,7 @@ const Cv = ({type}) => {
       <h1>CV</h1>
       <div className='cv-body' style={fadeIn}>
       <img src={cv} className='cv-img' alt='cv'/>
-        <Button name='Get CV' link ='https://docs.google.com/document/d/1S8qfVgXchDS1zdEpe9wvTZ8ydK-TRD4iYAF24LjSyos/edit?usp=drive_link'/>
+        <Button name='Get CV' link ='https://docs.google.com/document/d/1S8qfVgXchDS1zdEpe9wvTZ8ydK-TRD4iYAF24LjSyos/export?format=pdf'/>
         <img src={moon} className='cv-moon p-abs planet' style={fadeUp} alt='cv-moon' />
       </div>
     </section>
@@ -39,7 +39,7 @@ Cv.propTypes = {
   type: PropTypes.string,
 }
 
-Cv.defaultPrpos = {
+Cv.defaultProps = {
   type:'',
 }
 

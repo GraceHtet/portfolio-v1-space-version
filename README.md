@@ -1,27 +1,8 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-Modify this file to match your project and remove sections that don't apply.
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
-  <h3><b>Space Versoin Portfolio</b></h3>
+  <h3><b>Space Version Portfolio</b></h3>
 
 </div>
 
@@ -39,23 +20,21 @@ After you're finished please remove all the comments and instructions!
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Space-Version-Portfolio] <a name="portfolio-project"></a>
 
-> This is the space-version of my portfolio website.It is built with React.JS.
+> This is the space-version of my portfolio website. It is built with React.js.
 
-**[Space-Version-Portfolio]** is a...
+**[Space-Version-Portfolio]** is a personal portfolio site with a space theme, showcasing my projects, technical skills, CV, and a way to get in touch.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -65,6 +44,9 @@ After you're finished please remove all the comments and instructions!
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactrouter.com/">React Router</a></li>
+    <li><a href="https://www.framer.com/motion/">Framer Motion</a></li>
+    <li><a href="https://formspree.io/">Formspree</a></li>
   </ul>
 </details>
 
@@ -72,11 +54,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[About_Me]**
-- **[Projects]**
-- **[Techskills]**
+- **About Me** — background, skills, and tech stack
+- **Projects** — filterable showcase of solo, collaborative, and mini projects with live demo and source links
+- **CV & Contact** — downloadable CV and a contact form
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +78,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need Node.js and npm installed.
 
 ### Setup
 
@@ -109,16 +89,13 @@ Clone this repository to your desired folder:
   git clone git@github.com:GraceHtet/portfolio-v1-space-version.git
 ```
 
--
-
 ### Install
 
 Install this project with:
 
 ```sh
-  cd my-project
+  cd portfolio-v1-space-version
   npm install
-  vite build
 ```
 
 ### Usage
@@ -128,6 +105,14 @@ To run the project, execute the following command:
 ```sh
     npm run dev
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- DEPLOYMENT -->
+
+## 🚀 Deployment <a name="deployment"></a>
+
+This project is deployed on [Vercel](https://vercel.com/), which builds and deploys automatically on every push to the `main` branch. The `vercel.json` rewrite rule handles client-side routing for React Router.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,9 +131,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Soft Skills]**
+- [ ] **Soft Skills** section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,6 +165,6 @@ I would like to thank Microverse, and my coding partners(Fauziyah, Tamara).
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
