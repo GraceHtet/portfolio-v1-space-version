@@ -22,7 +22,7 @@
     padding: 5px 10px;
   }
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     height: auto;
     text-align: center;
     grid-template-columns: 1fr;
@@ -79,7 +79,7 @@
     transform: rotate(135deg);
   }
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     .tech-icons {
       height: auto;
       width: 80%;
@@ -107,7 +107,7 @@
     }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (width <= 480px) {
     height: auto;
 
     .tech-icons {

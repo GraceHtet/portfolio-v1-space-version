@@ -39,14 +39,14 @@
     bottom: -20%;
   }
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     .intro {
       font-size: 14px;
       line-height: 30px;
     }
   }
 
-  @media (max-width: 500px) {
+  @media (width <= 500px) {
     justify-content: center;
 
     .container {
