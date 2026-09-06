@@ -17,6 +17,7 @@
     .cv-img {
       width: 100%;
       height: 70vh;
+      object-fit: contain;
       grid-column: 2 / span 1;
     }
   }
